@@ -1,24 +1,28 @@
-main {
-    background-color: rgb(255, 0, 170);
+nav {
+    background-color: rgba(0, 128, 255, 0.537);
     padding: 10px;
-  
 }
 
 
-nav a {
-    color: blueviolet;
+
+nav a   {
+    color: azure;
     padding: 10px;
     display: block;
 }
 h1 {
-    color: rgb(0, 255, 195);
+    color: blue;
 }   
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid color(srgb rgb(139, 8, 139) green blue);
-padding: 2px;
-box-shadow: 0 0 30px color(srgb red rgb(16, 160, 16) blue);
+  border: 1px solid cornflowerblue ;
+  padding: 2px;
+  box-shadow: 0 0 30px rgb(210, 237, 100)
+ 
+}
+p {
+  padding: 0;
 }
 
 aside {
@@ -34,10 +38,7 @@ aside {
 aside img {
   width: 200px;
   height: auto;
-}
 
-p {
-  padding: 0;
 }
 
 footer {
@@ -45,3 +46,5 @@ footer {
   border-top: 1px solid #000000;
   text-align: center;
 }
+
+  
