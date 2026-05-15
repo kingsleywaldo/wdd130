@@ -2,11 +2,26 @@ main {
     max-width: 900px;
 }
 
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(75, 42, 223);
+    padding: 10px;
+    display: block;
+}
+
+h1 {
+    color: rgb(39, 182, 190);
+}
+
 aside {
     width: 300px;
     margin: 20px auto;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(159, 28, 28);
     background-color: #f2f2f2;
     color: #000;
 }
@@ -19,6 +34,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 0 0 10px gray;
 }
 
 p {
