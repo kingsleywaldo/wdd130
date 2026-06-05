@@ -1,62 +1,69 @@
-<main>
+<!DOCTYPE html>
+<html lang="en-US">
 
-    <h1>Contact Us</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Company Information -->
-    <section class="contact-info">
+    <meta name="description"
+      content="Contact White Water Rafting Company for trips, reservations, and support.">
+    <meta name="author" content="Your Name">
 
-        <h2>Company Information</h2>
+    <title>Contact Us | White Water Rafting Company</title>
 
-        <p><strong>Address:</strong> 123 River Rapids Road, Adventure Valley, ID 83440</p>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
 
-        <p><strong>Phone:</strong> (208) 555-1234</p>
+<body>
 
-        <p><strong>Email:</strong> info@excitingexpeditions.com</p>
+    <!-- HEADER -->
+    <header>
+        <img src="images/logo.png" alt="White Water Rafting Logo">
 
-        <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_CODE_HERE" loading="lazy"
-          allowfullscreen>
-        </iframe>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-    </section>
+    <!-- MAIN CONTENT -->
+    <main>
 
-    <!-- Employee Profiles -->
-    <section class="employees">
+        <h1>White Water Rafting Company</h1>
 
-        <h2>Meet Our Team</h2>
+        <!-- COMPANY INFO -->
+        <section class="contact-info">
 
-        <figure>
-            <img src="images/employee1.jpg" alt="Sarah Johnson">
-            <figcaption>Sarah Johnson - General Manager</figcaption>
-        </figure>
+            <h2>Contact Information</h2>
 
-        <figure>
-            <img src="images/employee2.jpg" alt="Michael Brown">
-            <figcaption>Michael Brown - Lead River Guide</figcaption>
-        </figure>
+            <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
+            <p><strong>Phone:</strong> +1 999 999 9999</p>
+            <p><strong>Email:</strong> info@whitewater.com</p>
 
-        <figure>
-            <img src="images/employee3.jpg" alt="Emily Davis">
-            <figcaption>Emily Davis - Customer Service Representative</figcaption>
-        </figure>
+            <!-- Google Map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
+              loading="lazy" allowfullscreen>
+            </iframe>
 
-    </section>
+        </section>
 
-    <!-- Contact Form -->
-    <section class="contact-form">
+        <!-- CONTACT FORM -->
+        <section class="contact-form">
 
-        <h2>Send Us a Message</h2>
+            <h2>Send Us a Message</h2>
 
-        <form action="#" method="post">
+            <form action="#" method="post">
 
-            <label for="fullname">Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
 
-            <fieldset>
-
-                <legend>Purpose of Message</legend>
+                <p>Message Purpose:</p>
 
                 <label>
                     <input type="radio" name="purpose" value="general" checked>
@@ -73,20 +80,59 @@
                     Website Suggestion
                 </label>
 
-            </fieldset>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
 
-            <label class="checkbox">
-                <input type="checkbox" name="newsletter">
-                Please subscribe me to the monthly newsletter
-            </label>
+                <button type="submit">Get in Touch!</button>
 
-            <button type="submit">Send Message</button>
+            </form>
 
-        </form>
+        </section>
 
-    </section>
+        <!-- EMPLOYEES -->
+        <section class="employees">
 
-</main>
+            <h2>We Are Here to Serve You</h2>
+
+            <figure>
+                <img src="images/employee1.jpg" alt="Employee Profile">
+                <figcaption>Employee Name</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee2.jpg" alt="Employee Profile">
+                <figcaption>Employee Name</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee3.jpg" alt="Employee Profile">
+                <figcaption>Employee Name</figcaption>
+            </figure>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 White Water Rafting Company | Kingsley Waldo
+        </p>
+
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
