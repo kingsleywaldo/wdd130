@@ -1,14 +1,101 @@
-/* CONTACT PAGE */
+```css
+/* =========================
+   ROOT VARIABLES
+========================= */
 
-.contact-info,
-.employees,
-.contact-form {
-    margin: 2rem 20px;
+:root {
+    --primary-color: #1f4e79;
+    --secondary-color: #2e8b57;
+    --accent-color: #f4f4f4;
+    --text-color: #333333;
+
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Verdana, Geneva, sans-serif;
 }
 
-.contact-info h2,
-.employees h2,
-.contact-form h2 {
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--accent-color);
+}
+
+header img {
+    width: 120px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -20,40 +107,23 @@
 .contact-info iframe {
     width: 100%;
     height: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     margin-top: 1rem;
 }
 
-/* Employee Profiles */
-.employees {
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    margin-bottom: 2rem;
+}
+
+.contact-form h2 {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-.employees {
-    display: flex;
-    flex-direction: column;
-}
-
-.employee-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.employee-gallery figure {
-    flex: 1;
-    min-width: 200px;
-}
-
-.employee-gallery img {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Contact Form */
 .contact-form form {
     display: grid;
     gap: 1rem;
@@ -61,26 +131,26 @@
     margin: 0 auto;
 }
 
+.contact-form label {
+    font-weight: bold;
+}
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
+    width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     font-family: var(--body-font);
 }
 
 .contact-form fieldset {
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 .contact-form legend {
     font-weight: bold;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 0.5rem;
 }
 
 .contact-form button {
@@ -88,11 +158,74 @@
     color: white;
     border: none;
     padding: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 .contact-form button:hover {
     background-color: var(--primary-color);
 }
+
+/* =========================
+   EMPLOYEE SECTION
+========================= */
+
+.employees {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.employees h2 {
+    margin-bottom: 1rem;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employee-gallery figure {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.employee-gallery img {
+    border-radius: 6px;
+}
+
+.employee-gallery figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 32px;
+}
+
+```
