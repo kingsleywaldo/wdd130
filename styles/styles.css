@@ -9,7 +9,7 @@ main {
 }
 
 nav {
-    background-color: #333;
+    background-color: #b9a1a1;
     padding: 10px;
 }
 
@@ -60,7 +60,7 @@ p {
 
 footer {
     margin-top: 20px;
-    border-top: 2px solid black;
+    border-top: 2px solid rgb(199, 160, 160);
     text-align: center;
 }
 
@@ -71,5 +71,5 @@ footer {
     border: 1px solid rgb(159, 28, 28);
     padding: 1rem;
     background-color: #f2f2f2;
-    color: #000;
+    color: #c6a9a9;
 }
