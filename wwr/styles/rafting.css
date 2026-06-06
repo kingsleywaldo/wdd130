@@ -1,4 +1,4 @@
-```css
+css
 /* =========================
    ROOT VARIABLES
 ========================= */
@@ -7,7 +7,7 @@
     --primary-color: #1f4e79;
     --secondary-color: #2e8b57;
     --accent-color: #f4f4f4;
-    --text-color: #333333;
+    --text-color: #c69999;
 
     --heading-font: Arial, Helvetica, sans-serif;
     --body-font: Verdana, Geneva, sans-serif;
