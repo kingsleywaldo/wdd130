@@ -1,229 +1,53 @@
-css
-/* =========================
-   ROOT VARIABLES
-========================= */
-
-:root {
-    --primary-color: #1f4e79;
-    --secondary-color: #2e8b57;
-    --accent-color: #f4f4f4;
-    --text-color: #c69999;
-
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Verdana, Geneva, sans-serif;
+.hero {
+    position: relative;
 }
 
-/* =========================
-   GLOBAL STYLES
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--text-color);
-    line-height: 1.6;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--accent-color);
-}
-
-header img {
-    width: 120px;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-    padding: 0.5rem;
-}
-
-header nav a:hover {
-    color: var(--secondary-color);
-}
-
-/* =========================
-   MAIN CONTENT
-========================= */
-
-main {
-    padding: 20px;
-}
-
-main h1 {
-    text-align: center;
-    margin: 1rem 0 2rem;
-}
-
-/* =========================
-   CONTACT INFO
-========================= */
-
-.contact-info {
-    margin-bottom: 2rem;
-}
-
-.contact-info h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.contact-info p {
-    margin-bottom: 0.5rem;
-}
-
-.contact-info iframe {
+.hero img {
     width: 100%;
-    height: 300px;
-    border: 1px solid #cccccc;
-    margin-top: 1rem;
+    display: block;
 }
 
-/* =========================
-   CONTACT FORM
-========================= */
-
-.contact-form {
-    margin-bottom: 2rem;
-}
-
-.contact-form h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.contact-form form {
-    display: grid;
-    gap: 1rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.contact-form label {
-    font-weight: bold;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #cccccc;
-    font-family: var(--body-font);
-}
-
-.contact-form fieldset {
-    padding: 1rem;
-    border: 1px solid #cccccc;
-}
-
-.contact-form legend {
-    font-weight: bold;
-}
-
-.contact-form button {
-    background-color: var(--secondary-color);
+.hero h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    border: none;
+    background: rgba(0, 0, 0, .5);
     padding: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
 }
 
-.contact-form button:hover {
-    background-color: var(--primary-color);
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-/* =========================
-   EMPLOYEE SECTION
-========================= */
-
-.employees {
-    text-align: center;
-    margin-bottom: 2rem;
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
-.employees h2 {
-    margin-bottom: 1rem;
+.trip-card img {
+    width: 100%;
+    display: block;
 }
 
-.employee-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.employee-gallery figure {
-    flex: 1;
-    min-width: 200px;
-    max-width: 250px;
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: .75rem;
 }
 
-.employee-gallery img {
-    border-radius: 6px;
-}
-
-.employee-gallery figcaption {
-    margin-top: 0.5rem;
-    font-weight: bold;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--accent-color);
-    margin-top: 2rem;
-}
-
-footer p {
-    font-size: 0.9rem;
-}
-
-.socialmedia {
-    display: flex;
-    gap: 10px;
-}
-
-.socialmedia img {
-    width: 32px;
+.button {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
 }
